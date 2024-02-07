@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: ar-font;
+  src: url(../assets/fonts/cocon-next-arabic.ttf);
+}
+
+@font-face {
+  font-family: ar2-font;
+  src: url(../assets/fonts/Cairo-SemiBold.ttf);
+}
+
+body {
+  direction: rtl;
+  font-family: ar2-font;
+}
+header {
+  background-image: url(../images/header.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+header .brand {
+  display: inline-block;
+  margin: 100px auto 60px;
+  padding-bottom: 25px;
+  border-bottom: 5px solid #e4b902;
+}
+
+header .slogo {
+  margin: 15px auto;
+}
+
+header .header-navigation h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 75px;
+  font-family: ar-font;
+}
+
+header .header-navigation p {
+  color: #acacac;
+  font-size: 20px;
+  line-height: 26px;
+  margin: auto;
+  width: 40%;
+  font-family: ar2-font;
+}
+
+header .count-down {
+  width: 60%;
+  margin: 90px auto;
+}
+
+header .counter {
+  display: inline-block;
+  margin: 0px 15px;
+}
+
+header .count-amount {
+  font-size: 60px;
+  display: block;
+  font-weight: bold;
+  color: #e4b902;
+  font-family: ar-font;
+}
+
+header .count-period {
+  font-size: 30px;
+  display: block;
+  font-weight: bold;
+  color: #fff;
+  font-family: ar2-font;
+}
+
+header .send-notification p {
+  font-size: 25px;
+  line-height: 15px;
+  color: #fff;
+  font-weight: bold;
+  font-family: ar2-font;
+  margin: 35px auto;
+}
+
+header .input-group {
+  width: 30%;
+  margin: auto;
+  transform: translateY(30%);
+}
+
+header .send-notification .input-group button {
+  padding: 13px 33px;
+  border-radius: 0;
+  background-color: #e4b902;
+}
+
+header .send-notification .input-group input {
+  border-radius: 0px;
+  border: 2px solid #e6e6e6;
+  color: #453f3f;
+  font-size: 18px;
+  text-align: right;
+}
+
+header .send-notification .invalid-feedback {
+  margin-bottom: -30px;
+}
+
+section.features {
+  padding: 100px 0px;
+}
+
+section.features h2 {
+  font-size: 60px;
+  color: #555;
+  margin-bottom: 50px;
+  font-family: ar-font;
+}
+
+section.features .row .d-flex {
+  border: 4px solid #fffbf3;
+  padding: 40px 10px;
+  margin-bottom: 20px;
+  max-height: 190px;
+}
+
+section.features .row .d-flex h4 {
+  font-size: 24px;
+  color: #555;
+}
+
+section.features .row .d-flex p {
+  font-size: 15px;
+  line-height: 25px;
+  color: #a1a1a1;
+}
+
+section.features .row .col-md-6:nth-child(even) {
+  direction: ltr;
+}
+
+footer {
+  background-image: url(../images/footer.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+footer .footer-notification {
+  background-color: rgba(255, 206, 0, 0.7);
+  padding: 70px 0;
+}
+
+footer .footer-notification h3 {
+  font-size: 45px;
+  margin-bottom: 30px;
+  color: #e6e6e6;
+  font-weight: bold;
+  font-family: ar-font;
+}
+
+footer .input-group {
+  width: 30%;
+  margin: auto;
+}
+
+footer .input-group input {
+  font-size: 18px;
+  border-radius: 0;
+  color: #c7c7c7;
+  border-color: #fff;
+  text-align: right;
+}
+
+footer .input-group button {
+  border-radius: 0;
+  background-color: #393939;
+  padding: 13px 33px;
+}
+
+footer .social-media {
+  background-color: rgba(57, 57, 57, 0.9);
+  padding: 100px 0 30px;
+}
+
+footer .social-media h3 {
+  font-size: 45px;
+  margin-bottom: 30px;
+  font-family: ar-font;
+  font-weight: bold;
+  color: #e6e6e6;
+}
+footer .social-media .list-inline a {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 24px;
+  background-color: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  display: block;
+  transition: 0.5s;
+}
+
+footer .social-media .list-inline a:hover {
+  background-color: #fad32f;
+  color: rgba(57, 57, 57, 0.9);
+}
+
+footer .social-media hr {
+  width: 25%;
+  margin: 50px auto 30px;
+}
+
+footer .social-media a.email {
+  color: #b4b4b4;
+  text-decoration: none;
+}
+
+footer .social-media a.email i {
+  color: #ffce00;
+  margin-left: 5px;
+}
+
+@media (max-width: 992px) {
+  header .heading-page p {
+    width: 70%;
+  }
+
+  .input-group {
+    width: 50% !important;
+  }
+
+  section.features .row .d-flex {
+    padding: 15px 10px;
+  }
+
+  section.features .row .d-flex h4 {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  header .count-down {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  header .heading-page h1 {
+    font-size: 45px;
+  }
+  header .heading-page p {
+    width: 90%;
+  }
+  .input-group {
+    width: 80%;
+  }
+}
